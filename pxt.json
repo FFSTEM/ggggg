@@ -1,0 +1,40 @@
+{
+    "name": "IoT_keyestudio",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:keyestudio2019/ks_neopixel_bluetooth",
+        "LCD1602 IIC": "github:makecode-extensions/i2cLCD1602",
+        "DHT11_22": "github:keyestudio2019/ks_dht11_22",
+        "microphone": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "ns.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "targetVersions": {
+        "target": "4.0.9",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}
